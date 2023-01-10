@@ -1,0 +1,36 @@
+int main() {
+    // This is a comment
+
+    int a, b, c;
+    a = 1;
+    b = 1;
+
+    bool r;
+    r = true;
+
+    repeat ( // An interrupting comment
+        r) {
+        c = a + b;
+
+        a = b;
+        b = c;
+
+        r = (c > 15);
+    }
+
+    string result;
+    result = c * 100;
+
+    bool exec;
+    exec = false;
+
+    repeat (r & c > 2000) {
+        // something when c > 2000
+        r = false;
+    }
+
+    repeat (r & c <= 2000) {
+        // something otherwise
+        r = false;
+    }
+}
